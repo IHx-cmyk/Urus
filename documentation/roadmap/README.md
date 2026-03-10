@@ -4,10 +4,56 @@
 
 | Version | Status | Date | Highlight |
 |---------|--------|------|-----------|
-| v0.1 | Released | 2025 | Initial prototype — lexer, parser, basic codegen |
-| v1.0.0 | Released | 2026 | Enums, match, imports, Result, f-strings, refcounting |
+| V0.1 | Released | 2025 | Initial prototype — lexer, parser, basic codegen |
+| V0.2/1 | Released | 2026-03 | Enums, match, imports, Result, f-strings, refcounting |
+| V0.2/2(F) | Released | 2026-03 | CMake, standalone compiler, error diagnostics, cross-platform fixes |
 
-## Current: v1.0.0
+## Versioning Scheme
+
+URUS uses a custom versioning format: `V{major}.{minor}/{patch}(tag)`
+
+| Part | Meaning |
+|------|---------|
+| `V0` | Pre-stable (major) |
+| `.2` | Feature set (minor) |
+| `/2` | Patch within that feature set |
+| `(X)` | Tag — describes the nature of the release |
+
+### Tags
+
+| Tag | Name | Description |
+|-----|------|-------------|
+| `(F)` | Fixed | Bug fixes |
+| `(A)` | Added | New features added |
+| `(U)` | Updated | Changes / improvements |
+| `(P)` | Patched | Small patches |
+| `(B)` | Beta | Testing version |
+| `(R)` | Release | Stable release |
+| `(E)` | Experimental | Experimental features |
+| `(D)` | Dev | Development version |
+
+### Release Stages
+
+| Stage | Description |
+|-------|-------------|
+| Alpha | Early development, unstable |
+| Beta | Feature-complete, under testing |
+| RC | Release Candidate — final testing before stable |
+| Stable | Production-ready |
+
+### Examples
+
+| Version | Meaning |
+|---------|---------|
+| `V0.2/1` | Feature set 2, first patch (no tag) |
+| `V0.2/2(F)` | Feature set 2, second patch — bug fixes |
+| `V0.2/3(A)` | Feature set 2, third patch — new features |
+| `V0.3/1(B)` | Feature set 3, first patch — beta |
+| `V1.0/1(R)` | Stable release |
+
+---
+
+## Current: V0.2/2(F) "Fixed"
 
 Features included:
 - Primitive types: `int`, `float`, `bool`, `str`, `void`
@@ -24,10 +70,13 @@ Features included:
 - Reference counting memory management
 - File I/O
 - Full test suite
+- CMake build system
+- Standalone compiler (runtime embedded)
+- Rich error diagnostics
 
 ---
 
-## Planned: v1.1.0 — Quality of Life
+## Planned: V0.3/1 — Quality of Life
 
 **Target:** Stability and developer experience
 
@@ -35,13 +84,12 @@ Features included:
 |---------|-------------|----------|
 | Default parameter values | `fn foo(x: int = 10)` | Medium |
 | Multi-line string literals | Triple-quote `"""..."""` | Medium |
-| Better error messages | Show source context, suggestions | High |
 | Warning system | Non-fatal warnings (unused vars, etc.) | Medium |
-| `--version` flag | Print version number | Low |
+| Const expressions | `const PI: float = 3.14159;` | Low |
 
 ---
 
-## Planned: v1.2.0 — Type System
+## Planned: V0.4/1 — Type System
 
 **Target:** More expressive type system
 
@@ -51,13 +99,12 @@ Features included:
 | Optional type | `Option<T>` (sugar for `Result<T, void>`) | High |
 | Tuple types | `(int, str)` — anonymous product types | Medium |
 | Type inference | `let x = 42;` (infer `int`) | High |
-| Const expressions | `const PI: float = 3.14159;` | Low |
 
 ---
 
-## Planned: v2.0.0 — Major Features
+## Planned: V0.5/1 — Methods & Traits
 
-**Target:** Production-ready language
+**Target:** Object-oriented capabilities
 
 | Feature | Description | Priority |
 |---------|-------------|----------|
@@ -65,12 +112,23 @@ Features included:
 | Traits/Interfaces | `trait Printable { fn to_string(): str; }` | High |
 | Generics | `fn max<T>(a: T, b: T): T` | High |
 | Closures | `let f = \|x\| x * 2;` | Medium |
-| Standard library | `std.collections`, `std.io`, `std.math` | High |
-| Package manager | Download & manage dependencies | Medium |
 
 ---
 
-## Future: v3.0.0 — Advanced
+## Planned: V1.0/1 — Stable Release
+
+**Target:** Production-ready language
+
+| Feature | Description | Priority |
+|---------|-------------|----------|
+| Standard library | `std.collections`, `std.io`, `std.math` | High |
+| Package manager | Download & manage dependencies | Medium |
+| Full documentation | Complete language guide | High |
+| Stability guarantee | No breaking changes in V1.x | High |
+
+---
+
+## Future: V2.0/1 — Advanced
 
 | Feature | Description |
 |---------|-------------|
@@ -88,14 +146,15 @@ Features included:
 ## Milestones
 
 ```
-2025 Q4  ── v0.1 prototype (done)
-2026 Q1  ── v1.0.0 release (done)
-2026 Q2  ── v1.1.0 quality of life
-2026 Q3  ── v1.2.0 type system improvements
-2026 Q4  ── v2.0.0 planning & design
-2027 H1  ── v2.0.0 methods, traits, generics
-2027 H2  ── v2.x standard library & tooling
-2028     ── v3.0.0 async, concurrency, WASM
+2025 Q4  ── V0.1 prototype (done)
+2026 Q1  ── V0.2/1 core features (done)
+2026 Q1  ── V0.2/2(F) bug fixes (done)
+2026 Q2  ── V0.3/1 quality of life
+2026 Q3  ── V0.4/1 type system
+2026 Q4  ── V0.5/1 methods & traits
+2027 H1  ── V1.0/1 stable release
+2027 H2  ── V1.x standard library & tooling
+2028     ── V2.0/1 async, concurrency, WASM
 ```
 
 ## Contributing

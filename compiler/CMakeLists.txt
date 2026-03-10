@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
-project(UrusCompiler VERSION 1.0.1 LANGUAGES C)
+project(UrusCompiler VERSION 0.2.2 LANGUAGES C)
 
 set(PROJECT_VERSION_TAGS "(F)-Fixed")
 set(CMAKE_C_STANDARD 11) # -std=c11

@@ -24,7 +24,7 @@ The changelog follows the [Keep a Changelog](https://keepachangelog.com/) format
 
 ---
 
-## [1.0.0] - 2026-03-02
+## V0.2/1 — 2026-03-02
 
 ### Added
 - **Enums / Tagged Unions** — `enum Shape { Circle(r: float); Point; }`
@@ -59,7 +59,7 @@ The changelog follows the [Keep a Changelog](https://keepachangelog.com/) format
 
 ---
 
-## [0.1.0] - 2025
+## V0.1 — 2025
 
 ### Added
 - Initial compiler: lexer, parser, sema, codegen

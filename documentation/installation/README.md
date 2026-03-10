@@ -108,7 +108,7 @@ urusc --help
 
 Output:
 ```
-URUS Compiler v1.0.1(F)
+URUS Compiler V0.2/2(F)
 ...
 ```
 

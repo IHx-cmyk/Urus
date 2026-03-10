@@ -4,9 +4,9 @@
 
 | Version | Supported |
 |---------|-----------|
-| 1.0.1   | Yes (current) |
-| 1.0.0   | Yes       |
-| < 1.0   | No        |
+| V0.2/2  | Yes (current) |
+| V0.2/1  | Yes       |
+| V0.1    | No        |
 
 ## Reporting a Vulnerability
 

@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/version-1.0.1(F)-blue" alt="Version" />
+  <img src="https://img.shields.io/badge/version-V0.2/2(F)-blue" alt="Version" />
   <img src="https://img.shields.io/badge/build-passing-brightgreen" alt="Build" />
   <img src="https://img.shields.io/badge/license-Apache%202.0-green" alt="License" />
   <img src="https://img.shields.io/badge/platform-Windows%20%7C%20Linux%20%7C%20macOS-lightgrey" alt="Platform" />
@@ -27,7 +27,7 @@
 
 ## Language Status
 
-URUS **v1.0.1(F) "Fixed"** is stable. The core language syntax and features are finalized. Breaking changes will only occur in major version bumps following [Semantic Versioning](https://semver.org/).
+URUS **V0.2/2(F) "Fixed"** is in active development. The core language syntax and features are functional. The project follows a custom versioning scheme: `V{major}.{minor}/{patch}`.
 
 ---
 
@@ -328,7 +328,7 @@ fn main(): void {
 ## CLI Usage
 
 ```
-URUS Compiler v1.0.1(F)
+URUS Compiler V0.2/2(F)
 
 usage: urusc <file.urus> [options]
 
@@ -376,7 +376,7 @@ Source (.urus)
 
 | Metric | Value |
 |--------|-------|
-| Version | 1.0.1(F) "Fixed" |
+| Version | V0.2/2(F) "Fixed" |
 | Compiler Size | ~464 KB (standalone, runtime embedded) |
 | Runtime | ~16 KB header-only (embedded in binary) |
 | Compiler LOC | ~4,700+ |
@@ -494,7 +494,7 @@ Urus/
 |
 |-- SPEC.md                     # Language specification & grammar
 |-- CHANGELOG.md                # Version history
-|-- CATATANRASYA.md             # Development notes (v1.0.1)
+|-- CATATANRASYA.md             # Development notes (V0.2/2)
 |-- CODE_OF_CONDUCT.md          # Community guidelines
 |-- CONTRIBUTING.md             # Contribution guide
 |-- SECURITY.md                 # Security policy
@@ -522,25 +522,31 @@ Urus/
 
 ## Roadmap
 
-### v1.1.0 — Quality of Life
+### V0.3/1 — Quality of Life
 - Default parameter values
-- ~~Better error messages with source context~~ *(Done in v1.0.1)*
+- ~~Better error messages with source context~~ *(Done in V0.2/2)*
 - Warning system (unused variables, etc.)
+- Multi-line string literals
 
-### v1.2.0 — Type System
+### V0.4/1 — Type System
 - Type aliases (`type ID = int;`)
 - Optional type (`Option<T>`)
+- Tuple types (`(int, str)`)
 - Type inference (`let x = 42;`)
 
-### v2.0.0 — Major Features
+### V0.5/1 — Methods & Traits
 - Methods (`impl Point { fn distance() }`)
 - Traits / Interfaces
 - Generics (`fn max<T>(a: T, b: T): T`)
 - Closures
+
+### V1.0/1 — Stable Release
 - Standard library
 - Package manager
+- Full documentation
+- Production-ready
 
-### v3.0.0 — Advanced
+### V2.0/1 — Advanced
 - Async/await
 - Concurrency
 - WASM target

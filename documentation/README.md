@@ -1,6 +1,6 @@
 # URUS Documentation
 
-Complete documentation for URUS Programming Language v1.0.0.
+Complete documentation for URUS Programming Language V0.2/2(F).
 
 ## Table of Contents
 

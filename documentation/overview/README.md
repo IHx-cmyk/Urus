@@ -11,7 +11,7 @@ URUS is a programming language designed to be **simple, safe, and easy to learn*
 | C is too low-level and prone to memory bugs | Automatic ref-counting, strict type safety |
 | Python/JS are too slow for some use cases | Compiles to native C binary |
 | Rust's learning curve is too steep | Simple syntax, focused feature set |
-| New languages often lack documentation | Complete documentation from v1.0.0 |
+| New languages often lack documentation | Complete documentation from V0.2/1 |
 
 ## Target Users
 

@@ -1,4 +1,4 @@
-# URUS Language Specification v1.0.1(F)
+# URUS Language Specification V0.2/2(F)
 
 ## Overview
 

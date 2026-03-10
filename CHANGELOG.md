@@ -1,6 +1,6 @@
 # Changelog
 
-## v1.0.1(F) "Fixed" (2026-03-09)
+## V0.2/2(F) "Fixed" (2026-03-09)
 
 ### Build System
 - Migrated from Makefile/build.bat to **CMake** for cross-platform portability
@@ -34,7 +34,7 @@
 
 ---
 
-## v1.0.0 (2026-03-02)
+## V0.2/1 (2026-03-02)
 
 ### New Features
 - **Enums / Tagged Unions**: `enum Shape { Circle(r: float); Rect(w: float, h: float); Point; }`
@@ -63,7 +63,9 @@
 - Empty function params emit `void` in C for correctness
 - Version string in compiler output
 
-## v0.1 (2025-03-01)
+---
+
+## V0.1 (2025-03-01)
 
 ### Initial Release
 - Primitive types: int, float, bool, str, void
