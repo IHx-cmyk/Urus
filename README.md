@@ -495,7 +495,7 @@ Urus/
 |
 |-- SPEC.md                     # Language specification & grammar
 |-- CHANGELOG.md                # Version history
-|-- CATATANRASYA.md             # Development notes (V0.2/2)
+|-- Diary/                      # Development notes & complaints
 |-- CODE_OF_CONDUCT.md          # Community guidelines
 |-- CONTRIBUTING.md             # Contribution guide
 |-- SECURITY.md                 # Security policy
@@ -584,6 +584,34 @@ See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
 
 ---
 
+## Contributors
+
+Thanks to everyone who has contributed to URUS!
+
+### Urus Foundation Developer
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/RasyaAndrean"><img src="https://github.com/RasyaAndrean.png" width="80" /><br /><sub><b>Rasya Andrean</b></sub></a><br /><sub>Founder & Lead</sub></td>
+    <td align="center"><a href="https://github.com/Mulyawan-ts"><img src="https://github.com/Mulyawan-ts.png" width="80" /><br /><sub><b>Mulyawan-ts</b></sub></a><br /><sub>Developer</sub></td>
+    <td align="center"><a href="https://github.com/John-fried"><img src="https://github.com/John-fried.png" width="80" /><br /><sub><b>John-fried</b></sub></a><br /><sub>Developer</sub></td>
+  </tr>
+</table>
+
+### Urus Foundation Contributors
+
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/kkkfasya"><img src="https://github.com/kkkfasya.png" width="80" /><br /><sub><b>kkkfasya</b></sub></a></td>
+    <td align="center"><a href="https://github.com/fmway"><img src="https://github.com/fmway.png" width="80" /><br /><sub><b>fmway</b></sub></a></td>
+    <td align="center"><a href="https://github.com/fepfitra"><img src="https://github.com/fepfitra.png" width="80" /><br /><sub><b>fepfitra</b></sub></a></td>
+    <td align="center"><a href="https://github.com/lordpaijo"><img src="https://github.com/lordpaijo.png" width="80" /><br /><sub><b>lordpaijo</b></sub></a></td>
+    <td align="center"><a href="https://github.com/XBotzLauncher"><img src="https://github.com/XBotzLauncher.png" width="80" /><br /><sub><b>XBotzLauncher</b></sub></a></td>
+  </tr>
+</table>
+
+---
+
 ## License
 
 Apache License 2.0 — see [LICENSE](./LICENSE)
@@ -591,6 +619,8 @@ Apache License 2.0 — see [LICENSE](./LICENSE)
 ---
 
 <p align="center">
+  <img src="assets/urus-quote.jpg" alt="Urus Foundation" width="400" />
+  <br><br>
   <strong>Built with care. Designed for clarity.</strong>
   <br><br>
   <a href="./documentation/">Documentation</a> &nbsp;&bull;&nbsp;
