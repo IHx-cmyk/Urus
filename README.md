@@ -357,39 +357,26 @@ Example:
 
 ## Architecture
 
-```mermaid
-graph TD
-    %% Nodes definition
-    A([📄 Source .urus])
-    B[Lexer]
-    C[Parser]
-    D[Sema]
-    E[Codegen]
-    F[GCC]
-    G([🚀 Executable])
-
-    %% Flow
-    A --> B --> C --> D --> E --> F --> G
-
-    %% Styling for Dark Mode Contrast
-    style A fill:#238636,stroke:#2ea043,color:#fff
-    style B fill:#161b22,stroke:#58a6ff,color:#58a6ff
-    style C fill:#161b22,stroke:#58a6ff,color:#58a6ff
-    style D fill:#161b22,stroke:#58a6ff,color:#58a6ff
-    style E fill:#161b22,stroke:#58a6ff,color:#58a6ff
-    style F fill:#161b22,stroke:#d2a8ff,color:#d2a8ff
-    style G fill:#238636,stroke:#2ea043,color:#fff
-
-    %% Sub-text inside nodes (Ramping)
-    subgraph Legend [Process Flow]
-    direction LR
-    B --- B1[Tokenize]
-    C --- C1[AST]
-    D --- D1[Type Check]
-    E --- E1[C11 Code]
-    end
-    
-    style Legend fill:none,stroke:none,color:#8b949e
+```
+Source (.urus)
+     |
+     v
+  [ Lexer ]       Tokenize source code
+     |
+     v
+  [ Parser ]      Build Abstract Syntax Tree
+     |
+     v
+  [ Sema ]        Type checking & semantic analysis
+     |
+     v
+  [ Codegen ]     Generate standard C11 code
+     |
+     v
+  [ GCC ]         Compile to native binary
+     |
+     v
+  Executable
 ```
 
 ---
